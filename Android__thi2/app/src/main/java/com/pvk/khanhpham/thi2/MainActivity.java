@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void onGetAllProducts() {
-        Intent intent = new Intent(MainActivity.this, UserList.class);
+        Intent intent = new Intent(MainActivity.this, ProductList.class);
         startActivity(intent);
     }
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String isAdd = db.addProducts(edName.getText().toString(), edQuantity.getText().toString());
         Toast.makeText(this, isAdd, Toast.LENGTH_LONG).show();
 
-        Intent intent = new Intent(MainActivity.this, UserList.class);
+        Intent intent = new Intent(MainActivity.this, ProductList.class);
         startActivity(intent);
     }
 }
